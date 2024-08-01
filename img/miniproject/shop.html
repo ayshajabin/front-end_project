@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="mt-5 pt-5">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+        <div class="container-fluid">
+          <img src="img/logo.jpg" alt="..." style="height:80px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><i id="bar" class="fa-solid fa-bars"></i></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                  </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
+                 shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="girls.html">Girls Collections</a></li>
+                  <li><a class="dropdown-item" href="boys.html">Boys Collections</a></li>
+                  <li><a class="dropdown-item" href="shoes.html">Shoes & Accessories</a></li>
+                  <li><a class="dropdown-item" href="toys.html">Toys & Games</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa-solid fa-user"></i>
+              </li>
+             <li class="nav-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+             </li>
+            
+          </div>
+        </div>
+      </nav>
+    
+
+
+
+    <!-- products -->
+    <div id="featured"class="my-5 pb-5" >
+        <div class="container text-center mt-5 py-5">
+          <h1>Tiny Town Shop</h1><hr class="mx-auto">
+          <h5>Check out our new products with fair price. </h5>
+        </div>
+        <div class="row mx-auto container">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/girls/girls1.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">CORDUORY SHIRT</h5>
+            <h4 class="p-price">₹1799</h4>
+           <button class="btn text-light" onclick="myFunction()" >Add To Cart</button>
+          </div>
+        
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/boys/boys1.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">DUNGAREES</h5>
+            <h4 class="p-price">₹1999</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/boys/boys2.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">GIRLS SANDALS</h5>
+            <h4 class="p-price">₹1899</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shoes/1.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">KIDS CROCS</h5>
+            <h4 class="p-price">₹799</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/girls/girls2.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">CORDUORY SHIRT</h5>
+            <h4 class="p-price">₹1799</h4>
+           <button class="btn text-light" onclick="myFunction()" >Add To Cart</button>
+          </div>
+        
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shoes/2.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">DUNGAREES</h5>
+            <h4 class="p-price">₹1999</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shoes/3.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">GIRLS SANDALS</h5>
+            <h4 class="p-price">₹1899</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/boys/boys3.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">KIDS CROCS</h5>
+            <h4 class="p-price">₹799</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/toys/toys1.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">CORDUORY SHIRT</h5>
+            <h4 class="p-price">₹1799</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+        
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/girls/girls4.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">DUNGAREES</h5>
+            <h4 class="p-price">₹1999</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+      
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/boys/boys4.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">GIRLS SANDALS</h5>
+            <h4 class="p-price">₹1899</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+       
+        
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/girls/girls3.jpeg" alt="">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h5 class="p-name">KIDS CROCS</h5>
+            <h4 class="p-price">₹799</h4>
+           <button class="btn text-light" onclick="myFunction()">Add To Cart</button>
+          </div>
+        </div>
+      </div> 
+    
+    
+
+      <!-- footer -->
+
+      <div class="footer text-black">
+        <div class="row container mx-auto pt-5">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <img src="img/logo.jpg" alt="" height="70px">
+              <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <h3>Quick Links</h3>
+              <ul class="text-uppercase list-unstyled">
+                <li><a href="main.html">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">login</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <h3 class="pb-2">contact us</h3>
+            <div>
+              <h6 class="text-uppercase">address</h6>
+              <p>SREET NAME,CITY,IN</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">phone</h6>
+              <p>012-345-6789</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">email</h6>
+              <p>tinytown@gmail.com</p>
+           </div>   
+          </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <h3>Locations</h3>
+          <ul class="text-uppercase list-unstyled">
+          <li><a href="#">india</a></li>
+          <li><a href="#">UAE</a></li>
+          <li><a href="#">Qatar</a></li>
+          <li><a href="#">Saudia arabia</a></li>
+          <li><a href="#">London</a></li>
+          </ul>
+        </div>
+        <div class=" copyright container p-4 ">
+          <div class="row ">
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <img src="img/pay.png" alt="" width="35%">
+              </div>
+    
+              <div class="col-lg-3 col-md-6 col-12 mb-2">
+                  <p class="text-center">Tiny Town eCommerce @ 2023.All Rights Reserved</p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 col-12 ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>  
+        </div>
+    
+    </div>
+</body>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="js/bootstrap.js"></script>
+<script>
+  function myFunction() {
+    alert("successfully added to cart!");
+  }
+</script>
+
+</html>

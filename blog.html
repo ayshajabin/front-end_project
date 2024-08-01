@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    #blog .post .post-img{
+      overflow: hidden;
+      cursor: pointer;
+    }
+   
+    #blog .post img{
+        width:100% ;
+        height:100%;
+        transition: 0.3s;
+    }
+    #blog .post:hover img{
+      transform: scale(1.3) rotate(-5deg);
+      opacity:0.8;
+    }
+    #blog .post h4{
+       color: black;
+    }
+    #blog .post  h4:hover{
+        color:rgb(108, 47, 47) ;
+    }
+    #blog-banner{
+      width:100% ;
+      height:300px;
+      background-size: cover;
+      background-position: center  ;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: flex-start;;
+      background-image: url(img/blog/blog_banner.jpg);
+  }
+  
+  
+  #blog-banner .button{
+      background-color:rgb(108, 47, 47) ;
+  }
+  
+  #blog-banner .button:hover{
+      background-color:black ;
+  }
+  </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+        <div class="container-fluid">
+          <img src="img/logo.jpg" alt="..." style="height:80px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span ><i id="bar" class="fa-solid fa-bars"></i></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="girls.html">Girls Collections</a></li>
+                      <li><a class="dropdown-item" href="boys.html">Boys Collections</a></li>
+                      <li><a class="dropdown-item" href="shoes.html">Shoes & Accessories</a></li>
+                      <li><a class="dropdown-item" href="toys.html">Toys & Games</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa-solid fa-user" data-bs-target="#col1" data-bs-toggle="collapse" type="button"></i>
+              </li>
+             <li class="nav-item">
+              <i class="fa-solid fa-bag-shopping"></i>
+             </li>
+          </div>
+        </div>
+      </nav>
+
+      <!-- blog -->
+    <div id="blog" class="container mt-5 pt-5" >
+        <h1 class="text-center p-3">Tiny Town Blog</h1><hr class="mx-auto">
+       <div id="blog1" class="container pt-5">
+        <div class="row">
+          <div class="post col-lg-6 col-md-12 col-12">
+            <div class="post-img">
+              <img src="img/blog/blog1.jpg" alt="">
+            </div>   
+            <h4 class="text-center pt-3">February Babies Are Extra Special</h4>
+            <p class="text-center text-black-50"> June 6, 2023</p>
+          </div>
+
+          <div class="post col-lg-6 col-md-12 col-12">
+            <div class="post-img">
+              <img src="img/blog/blog2.jpg" alt="">
+            </div>   
+            <h4 class="text-center pt-3">Applying The Kids Design Guide</h4>
+            <p class="text-center text-black-50"> aug 19, 2023</p>
+          </div>
+
+          <div class="post col-lg-6 col-md-12 col-12">
+            <div class="post-img">
+              <img src="img/blog/blog3.jpg" alt="">
+            </div>   
+            <h4 class="text-center pt-3">One Color, Five Looks for Girls</h4>
+            <p class="text-center text-black-50"> aug 27, 2023</p>
+          </div>
+
+          <div class="post col-lg-6 col-md-12 col-12">
+            <div class="post-img">
+              <img src="img/blog/blog4.jpg" alt="">
+            </div>   
+            <h4 class="text-center pt-3">Kids fashion trends summer</h4>
+            <p class="text-center text-black-50"> sept 4, 2023</p>
+          </div>
+        </div>
+       </div>
+    </div>     
+
+    <div id="blog-banner" class=" col-12 pb-5" >
+        <h1>UPTO 50% DISCOUNT</h1>
+        <h5>We celebrate childhood by supporting childrens,<br> and families 
+          with thoughtful designs, quality materials .</h5>
+        <a href="shop.html" class="button btn text-light border rounded-pill">Shop Now</a>
+        </div>
+
+      <div id="blog" class="container mt-5 pt-5" >
+       <div id="blog1" class="container pt-5">
+        <div class="row">
+          <div class="post col-lg-4 col-md-12 col-12">
+            <div class="post-img border rounded">
+              <img src="img/blog/blog5.jpg" alt="">
+            </div> 
+            <h4 class="text-center pt-3">The Surprising Way Motherhood Changed Me</h4>
+            <p class="text-center text-black-50"> June 6, 2023</p>
+          </div>
+
+          <div class="post col-lg-4 col-md-12 col-12">
+            <div class="post-img  border rounded">
+              <img src="img/blog/blog6.jpg" alt="">
+            </div> 
+            <h4 class="text-center pt-3">Dude, Don't Touch My Kid</h4>
+            <p class="text-center text-black-50"> July 4, 2023</p>
+          </div>
+
+          <div class="post col-lg-4 col-md-12 col-12">
+            <div class="post-img  border rounded">
+              <img src="img/blog/blog7.jpg" alt="">
+            </div> 
+            <h4 class="text-center pt-3">February Babies Are Extra Special</h4>
+            <p class="text-center text-black-50"> oct 15, 2023</p>
+          </div>
+        </div>
+       </div>
+    </div>     
+
+<!-- footer -->
+      <div class="footer text-black mt-5">
+        <div class="row container mx-auto pt-5">
+            <div class="col-lg-3 col-md-6 col-12 mb-3">
+              <img src="img/logo.jpg" alt="" height="70px">
+              <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <h3>Quick Links</h3>
+              <ul class="text-uppercase list-unstyled">
+                <li><a href="main.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="about.html">about</a></li>
+              </ul>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <h3 class="pb-2">contact us</h3>
+            <div>
+              <h6 class="text-uppercase">address</h6>
+              <p>SREET NAME,CITY,IN</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">phone</h6>
+              <p>012-345-6789</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">email</h6>
+              <p>tinytown@gmail.com</p>
+           </div>   
+          </div>
+        <div class="col-lg-3 col-md-6 col-12 mb-3">
+          <h3>Locations</h3>
+          <ul class="text-uppercase list-unstyled">
+          <li><a href="#">india</a></li>
+          <li><a href="#">UAE</a></li>
+          <li><a href="#">Qatar</a></li>
+          <li><a href="#">Saudia arabia</a></li>
+          <li><a href="#">London</a></li>
+          </ul>
+        </div>
+        <div class=" copyright container p-4 ">
+          <div class="row ">
+              <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <img src="img/pay.png" alt="" width="35%">
+              </div>
+    
+              <div class="col-lg-3 col-md-6 col-12 mb-2">
+                  <p class="text-center">Tiny Town eCommerce @ 2023.All Rights Reserved</p>
+              </div>
+              <div class=" col-lg-3 col-md-6 col-12 ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>  
+        </div>
+    
+    </div>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="js/bootstrap.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>     
